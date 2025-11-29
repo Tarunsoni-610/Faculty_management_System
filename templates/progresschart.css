@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+   
+    /* background: #f7f4ff;  */
+}
+/* body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f4ff; 
+} */
+
+.boxes {
+      height: 120px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .7rem;
+    border: 1px solid rgba(0,0,0,.1);
+    font-weight: 500;
+    color: black;
+    padding: 1rem;
+
+     box-shadow: 0px 4px 12px rgba(100, 80, 200, 0.2);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+.boxes:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 16px rgba(80, 40, 170, 0.35);
+}
+h1 {
+    color: #6A4FBF; /* soft purple */
+    font-weight: 600;
+}
+
+/* Chart Con */
+.chart-container {
+     width: 100%;
+    max-width: 500px;
+    height: 450px;
+    margin: auto;
+    background: #fff;
+    border-radius: 1rem;
+
+    /* Soft Shadow */
+    box-shadow: 0px 4px 14px rgba(120, 90, 220, 0.18);
+    padding: 15px;
+    transition: all .3s ease;
+}
+.chart-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 6px 20px rgba(90, 40, 200, 0.32);
+}
+#info p{margin-bottom: 0; 
+}
+
+#activityDropdown {
+    border-radius: .6rem;
+    border: 2px solid rgba(106, 79, 191, 0.3);
+    box-shadow: 0px 3px 6px rgba(120, 90, 220, 0.12);
+    transition: all .25s ease;
+}
+
+#activityDropdown:focus {
+    border: 2px solid #6A4FBF;
+    box-shadow: 0px 3px 10px rgba(90, 40, 200, 0.28);
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        max-width: 300px;
+        height: 300px;
+    }
+    .boxes {
+        height: 110px;
+    }
+}
